@@ -1,0 +1,13 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="36" fill="#F6F1E8"/>
+  <rect x="44" y="44" width="1112" height="542" rx="28" fill="#FFFFFF"/>
+  <path d="M44 498C216 388 378 338 601 338C824 338 986 388 1156 498V586H44V498Z" fill="#14263F"/>
+  <circle cx="158" cy="156" r="68" fill="#D6A21D"/>
+  <circle cx="158" cy="156" r="30" fill="#FFF6D6"/>
+  <path d="M110 175C134 152 150 143 158 143C166 143 182 152 206 175" stroke="#FFF6D6" stroke-width="8" stroke-linecap="round"/>
+  <text x="258" y="150" fill="#111111" font-family="Georgia, serif" font-size="54" font-weight="700">Yellow Rose Capital</text>
+  <text x="258" y="208" fill="#38543A" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="4">PASSIVE REAL ESTATE INVESTING</text>
+  <text x="258" y="260" fill="#3E3A33" font-family="Arial, sans-serif" font-size="28">Private real estate credit for accredited individual investors.</text>
+  <text x="258" y="314" fill="#3E3A33" font-family="Arial, sans-serif" font-size="28">Residential mortgage notes, first-position liens, and Texas market familiarity.</text>
+  <text x="258" y="375" fill="#F8F3EB" font-family="Arial, sans-serif" font-size="26" font-weight="700">San Antonio, Texas</text>
+</svg>
