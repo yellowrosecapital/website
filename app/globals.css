@@ -296,6 +296,13 @@ main {
   font-weight: 700;
 }
 
+.site-brand-mark-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.22rem;
+}
+
 .site-brand-copy {
   display: grid;
   min-width: 0;
@@ -330,6 +337,16 @@ main {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 2rem;
+}
+
+.site-footer-brand {
+  width: fit-content;
+  margin-bottom: 0.35rem;
+}
+
+.site-footer-mark {
+  width: 3.4rem;
+  height: 3.4rem;
 }
 
 .footer-nav {
@@ -678,6 +695,10 @@ main {
 
   .site-nav {
     justify-content: flex-start;
+  }
+
+  .site-footer-brand {
+    margin-bottom: 0.5rem;
   }
 
   .hero-media {
