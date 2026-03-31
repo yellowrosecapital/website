@@ -196,22 +196,23 @@ export default function HomePage() {
           <div className="grid-2" style={{ alignItems: "start" }}>
             <div className="stack">
               <Eyebrow>Insights</Eyebrow>
-              <SectionTitle>Educational content that supports search visibility and investor understanding.</SectionTitle>
+              <SectionTitle>Insights to help you invest with clarity</SectionTitle>
               <SectionCopy>
-                A small content layer helps the firm publish educational material without changing the core brand or compliance posture.
+                We share straightforward insights on real estate credit, passive investing, and the Texas housing market so you can better understand how these investments work and where they may fit in your portfolio.
               </SectionCopy>
             </div>
 
             <Card className="card-pad stack">
-              <div className="kicker">Shareable copy blocks</div>
+              <div className="kicker">What you’ll find:</div>
               <ul className="muted-list">
-                {growthContent.copyBlocks.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
+                <li>How passive real estate investing works without managing property</li>
+                <li>Insights on residential mortgage notes and private lending</li>
+                <li>Perspective on Texas markets and long-term housing fundamentals</li>
+                <li>Educational content to help you evaluate opportunities more confidently</li>
               </ul>
               <div className="button-row">
                 <TrackableButtonLink href="/insights" variant="secondary" eventProps={{ location: "home_insights" }}>
-                  View Insights
+                  Explore Insights
                 </TrackableButtonLink>
               </div>
             </Card>
