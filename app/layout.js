@@ -18,7 +18,19 @@ export const metadata = {
   description:
     "Passive real estate investing backed by real assets for accredited individual investors.",
   icons: {
-    icon: "/icon.svg"
+    icon: [
+      {
+        url: "/favicon-32.png",
+        sizes: "32x32",
+        type: "image/png"
+      },
+      {
+        url: "/favicon-64.png",
+        sizes: "64x64",
+        type: "image/png"
+      }
+    ],
+    apple: "/logo/yellow-rose-capital-icon-512.png"
   }
 };
 
