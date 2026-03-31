@@ -50,9 +50,9 @@ export default function HomePage() {
                 <div className="hero-media-inner">
                   <div className="hero-media-card">
                     <div className="kicker">Investment snapshot</div>
-                    <h2 className="hero-media-title">Private real estate credit with a capital preservation mindset.</h2>
+                    <h2 className="hero-media-title">Private real estate credit focused on income and capital preservation.</h2>
                     <p className="hero-media-copy">
-                      The public website emphasizes real estate-backed lending, disciplined underwriting, and passive participation for accredited investors.
+                      We provide accredited investors access to real estate-backed investments structured to generate consistent income through disciplined lending and conservative underwriting.
                     </p>
                   </div>
 
@@ -63,8 +63,8 @@ export default function HomePage() {
                         <p className="hero-media-copy">Residential mortgage notes secured by first-position liens.</p>
                       </div>
                       <div>
-                        <div className="kicker">Audience</div>
-                        <p className="hero-media-copy">Accredited individual investors seeking passive exposure.</p>
+                        <div className="kicker">Investor Profile</div>
+                        <p className="hero-media-copy">Accredited individuals seeking passive income and diversification beyond traditional markets.</p>
                       </div>
                     </div>
                   </div>
