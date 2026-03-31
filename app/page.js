@@ -156,7 +156,7 @@ export default function HomePage() {
         <Container>
           <div className="stack">
             <Eyebrow>Strategy snapshot</Eyebrow>
-            <SectionTitle>The public explanation stays high level and investor-friendly.</SectionTitle>
+            <SectionTitle>Disciplined real estate lending focused on income, security, and long-term consistency.</SectionTitle>
           </div>
 
           <div className="grid-2" style={{ marginTop: "1.4rem" }}>
