@@ -225,9 +225,9 @@ export default function HomePage() {
           <div className="grid-2" style={{ alignItems: "center" }}>
             <div className="stack">
               <Eyebrow>Leadership</Eyebrow>
-              <SectionTitle>Experienced operators with real-world investing and local market depth.</SectionTitle>
+              <SectionTitle>Operators who invest alongside the strategy they manage</SectionTitle>
               <SectionCopy>
-                The leadership team combines residential real estate investing, note strategy, local market experience, and practical deal execution.
+                Our team is actively involved in sourcing, structuring, and managing real estate investments across San Antonio and surrounding Texas markets bringing hands-on experience, disciplined underwriting, and local insight to every decision.
               </SectionCopy>
 
               <div className="stack">
