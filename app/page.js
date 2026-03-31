@@ -130,12 +130,6 @@ export default function HomePage() {
                 Investor capital is deployed into carefully underwritten loans backed by residential real estate, with a focus on capital preservation and disciplined risk management.
               </SectionCopy>
 
-              <ul className="muted-list">
-                {home.whatWeDo.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-
               <div className="button-row">
                 <ButtonLink href="/about" variant="secondary">
                   Learn About the Firm
