@@ -121,9 +121,13 @@ export default function HomePage() {
           <div className="grid-2" style={{ alignItems: "start" }}>
             <div className="stack">
               <Eyebrow>What we do</Eyebrow>
-              <SectionTitle>Private real estate credit for investors who want passive exposure.</SectionTitle>
+              <SectionTitle>A More Predictable Approach to Real Estate Investing</SectionTitle>
               <SectionCopy>
-                Yellow Rose Capital focuses on a straightforward message: real estate investing does not have to mean direct property ownership. The firm speaks to qualified investors who want a more measured, collateral-based way to participate in Texas residential real estate.
+                Yellow Rose Capital focuses on generating income through real estate-backed lending rather than property ownership. Instead of relying on appreciation or market timing, our strategy centers on producing consistent cash flow from secured debt investments.
+              </SectionCopy>
+
+              <SectionCopy>
+                Investor capital is deployed into carefully underwritten loans backed by residential real estate, with a focus on capital preservation and disciplined risk management.
               </SectionCopy>
 
               <ul className="muted-list">
