@@ -173,13 +173,16 @@ export default function HomePage() {
 
             <Card className="card-pad">
               <div className="stack">
-                <div className="kicker">Public stance</div>
+                <div className="kicker">Approach</div>
                 <p className="section-copy" style={{ marginTop: 0 }}>
-                  Yellow Rose Capital should not read like a mass-market syndication site. The tone is intentionally calm, institutional, and relationship-based, with the details of each opportunity kept in private offering materials.
+                  We take a disciplined, relationship-driven approach to investing.
+                </p>
+                <p className="section-copy" style={{ marginTop: 0 }}>
+                  Yellow Rose Capital is built around long-term investor partnerships, with a focus on transparency, consistency, and thoughtful capital deployment. Detailed investment information is shared directly with qualified investors through private offering materials.
                 </p>
                 <div className="button-row">
                   <ButtonLink href="/strategy" variant="ghost">
-                    Read the Strategy Page
+                    View Investment Strategy
                   </ButtonLink>
                 </div>
               </div>
