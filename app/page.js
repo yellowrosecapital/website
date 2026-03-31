@@ -264,11 +264,12 @@ export default function HomePage() {
             </div>
 
             <Card className="card-pad">
-              <BrandImage
-                src="/images/yellow-rose-capital-team-photo.jpg"
-                alt="Yellow Rose Capital leadership"
-                className="figure-frame"
-                fallback={
+              <div className="leader-photo-home-right">
+                <BrandImage
+                  src="/images/nick-disney-19.jpg"
+                  alt="Nick Disney portrait"
+                  className="figure-frame"
+                  fallback={
                     <div style={{ minHeight: "360px", padding: "1.4rem", display: "grid", alignContent: "end" }}>
                       <div className="stack">
                         <div className="kicker">Leadership photo placeholder</div>
@@ -277,9 +278,10 @@ export default function HomePage() {
                         </p>
                       </div>
                     </div>
-                }
-                priority
-              />
+                  }
+                  priority
+                />
+              </div>
             </Card>
           </div>
         </Container>
