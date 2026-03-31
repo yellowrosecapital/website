@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { BrandImage } from "@/components/brand-image";
 
-const logoPath = "/logo/yellow-rose-capital-icon-512.png";
+const logoPath = "/logo/yellow-rose-capital-full-logo.png";
 
 export function SiteFooter({ navItems, disclaimer }) {
   return (
@@ -14,14 +14,10 @@ export function SiteFooter({ navItems, disclaimer }) {
               <BrandImage
                 src={logoPath}
                 alt="Yellow Rose Capital logo"
-                className="site-brand-mark site-footer-mark"
-                imgClassName="site-brand-mark-image"
+                className="site-brand-mark site-brand-mark-full site-footer-mark"
+                imgClassName="site-brand-mark-image site-brand-mark-image-full"
                 fallback={<span aria-hidden="true">YR</span>}
               />
-              <span className="site-brand-copy">
-                <span className="site-brand-name">Yellow Rose Capital</span>
-                <span className="site-brand-tagline">Passive real estate investments</span>
-              </span>
             </Link>
             <p className="section-copy" style={{ marginTop: 0 }}>
               Passive real estate investing for accredited individual investors seeking real asset exposure, disciplined underwriting, and a relationship-based process.

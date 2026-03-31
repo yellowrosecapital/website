@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { BrandImage } from "@/components/brand-image";
 import { trackEvent } from "@/lib/tracking";
 
-const logoPath = "/logo/yellow-rose-capital-icon-512.png";
+const logoPath = "/logo/yellow-rose-capital-full-logo.png";
 
 export function SiteHeader({ navItems }) {
   const pathname = usePathname();
@@ -19,15 +19,11 @@ export function SiteHeader({ navItems }) {
             <BrandImage
               src={logoPath}
               alt="Yellow Rose Capital logo"
-              className="site-brand-mark"
-              imgClassName="site-brand-mark-image"
+              className="site-brand-mark site-brand-mark-full"
+              imgClassName="site-brand-mark-image site-brand-mark-image-full"
               fallback={<span aria-hidden="true">YR</span>}
               priority
             />
-            <span className="site-brand-copy">
-              <span className="site-brand-name">Yellow Rose Capital</span>
-              <span className="site-brand-tagline">Passive real estate investments</span>
-            </span>
           </Link>
 
           <nav className="site-nav" aria-label="Primary">

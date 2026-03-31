@@ -280,27 +280,30 @@ main {
 }
 
 .site-brand-mark {
-  width: 3rem;
-  height: 3rem;
+  width: 7.2rem;
+  height: 7.2rem;
   border-radius: 999px;
   overflow: hidden;
   flex: none;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(255, 214, 95, 0.95), rgba(214, 162, 29, 0.65)),
-    linear-gradient(180deg, rgba(20, 38, 63, 0.9), rgba(20, 38, 63, 0.82));
-  border: 1px solid rgba(17, 17, 17, 0.12);
-  display: grid;
-  place-items: center;
-  color: white;
-  font-family: var(--serif);
-  font-weight: 700;
+  background: transparent;
+  border: 0;
 }
 
 .site-brand-mark-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 0.22rem;
+  padding: 0;
+}
+
+.site-brand-mark-full {
+  width: 7.4rem;
+  height: 7.4rem;
+}
+
+.site-brand-mark-image-full {
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .site-brand-copy {
@@ -345,8 +348,8 @@ main {
 }
 
 .site-footer-mark {
-  width: 3.4rem;
-  height: 3.4rem;
+  width: 8.4rem;
+  height: 8.4rem;
 }
 
 .footer-nav {
@@ -701,6 +704,17 @@ main {
     margin-bottom: 0.5rem;
   }
 
+  .site-brand-mark,
+  .site-brand-mark-full {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+
+  .site-footer-mark {
+    width: 7.6rem;
+    height: 7.6rem;
+  }
+
   .hero-media {
     min-height: 420px;
   }
@@ -729,6 +743,17 @@ main {
 
   .hero {
     padding-top: 3rem;
+  }
+
+  .site-brand-mark,
+  .site-brand-mark-full {
+    width: 5.8rem;
+    height: 5.8rem;
+  }
+
+  .site-footer-mark {
+    width: 6.8rem;
+    height: 6.8rem;
   }
 
   .hero-media,
