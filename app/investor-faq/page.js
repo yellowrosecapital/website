@@ -1,4 +1,4 @@
-import { Card, Container, Eyebrow, Section, SectionCopy, SectionTitle } from "@/components/ui";
+import { ButtonLink, Card, Container, Eyebrow, Section, SectionCopy, SectionTitle } from "@/components/ui";
 import { siteContent } from "@/lib/site-content";
 
 export const metadata = siteContent.pageMeta.faq;
@@ -35,7 +35,7 @@ export default function InvestorFaqPage() {
             <div className="kicker">FAQ tone guardrail</div>
             <SectionTitle>Still have questions?</SectionTitle>
             <SectionCopy>
-              We’re happy to walk you through the strategy, structure, and what participation looks like. Detailed information is shared privately with qualified investors.
+              We're happy to walk you through the strategy, structure, and what participation looks like. Detailed information is shared privately with qualified investors.
             </SectionCopy>
             <div className="button-row">
               <ButtonLink href="/contact">Request Information</ButtonLink>
