@@ -131,8 +131,8 @@ export default function HomePage() {
               </SectionCopy>
 
               <div className="button-row">
-                <ButtonLink href="/about" variant="secondary">
-                  Learn About the Firm
+                <ButtonLink href="/strategy" variant="secondary">
+                  Read the Strategy
                 </ButtonLink>
               </div>
             </div>

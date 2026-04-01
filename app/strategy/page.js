@@ -4,16 +4,16 @@ import { siteContent } from "@/lib/site-content";
 export const metadata = siteContent.pageMeta.strategy;
 
 export default function StrategyPage() {
-  const { strategy } = siteContent;
+  const { strategy, about } = siteContent;
 
   return (
     <>
       <Section className="hero">
         <Container>
           <div className="stack">
-            <Eyebrow>Investment strategy</Eyebrow>
+            <Eyebrow>Strategy</Eyebrow>
             <h1 className="page-title">Private real estate credit built around residential collateral and disciplined underwriting.</h1>
-            <p className="page-lead">{strategy.intro}</p>
+            <p className="page-lead">{about.intro}</p>
           </div>
         </Container>
       </Section>
@@ -22,25 +22,22 @@ export default function StrategyPage() {
         <Container>
           <div className="grid-2" style={{ alignItems: "start" }}>
             <Card className="card-pad stack">
-              <div className="kicker">What the public page should say</div>
-              <ul className="muted-list">
-                <li>Private real estate credit is the core theme.</li>
-                <li>Residential mortgage notes and real estate-backed debt are the focus.</li>
-                <li>First-position liens and collateral quality are part of the underwriting story.</li>
-                <li>The Texas and San Antonio emphasis should remain visible.</li>
-              </ul>
+              <div className="kicker">Why the firm exists</div>
+              <SectionTitle style={{ fontSize: "1.6rem" }}>Built for accredited investors who want passive exposure to real estate.</SectionTitle>
+              <SectionCopy style={{ marginTop: 0 }}>{about.philosophy}</SectionCopy>
+              <SectionCopy style={{ marginTop: 0 }}>{about.whoItServes}</SectionCopy>
+              <div className="button-row">
+                <ButtonLink href="/contact">Request More Information</ButtonLink>
+              </div>
             </Card>
 
             <Card className="card-pad stack">
-              <div className="kicker">How the strategy should feel</div>
-              <p className="section-copy" style={{ marginTop: 0 }}>
-                The page should feel clean, credible, and understandable to an individual accredited investor who wants to know what the firm does without being pushed into a sales funnel.
-              </p>
-              <div className="button-row">
-                <ButtonLink href="/contact" variant="secondary">
-                  Request More Information
-                </ButtonLink>
-              </div>
+              <div className="kicker">Public brand rules</div>
+              <ul className="muted-list">
+                {about.commitments.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
             </Card>
           </div>
         </Container>
