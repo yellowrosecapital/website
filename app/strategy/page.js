@@ -96,7 +96,7 @@ export default function StrategyPage() {
             </div>
 
             <Card className="card-pad strategy-note-card">
-              <div className="kicker">Important nuance</div>
+              <div className="kicker">Strategy Flexibility</div>
               <SectionCopy style={{ marginTop: 0 }}>
                 {strategy.publicNote}
               </SectionCopy>
