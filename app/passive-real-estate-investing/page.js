@@ -44,9 +44,12 @@ export default function PassiveRealEstateInvestingPage() {
             </Card>
 
             <Card className="card-pad stack">
-              <SectionTitle>Why this page matters</SectionTitle>
+              <SectionTitle>Learn More About the Opportunity</SectionTitle>
               <SectionCopy>
-                This page should make the concept easy to understand for a qualified investor, while still keeping the tone conservative and grounded.
+                We aim to provide clear, straightforward information to help you understand how our investment approach works and whether it may be a fit for your portfolio.
+              </SectionCopy>
+              <SectionCopy style={{ marginTop: 0 }}>
+                If you’re interested in learning more, we’re available to provide additional details and answer any questions.
               </SectionCopy>
               <div className="button-row">
                 <ButtonLink href="/contact">Request Information</ButtonLink>
