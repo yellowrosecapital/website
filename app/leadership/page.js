@@ -16,7 +16,7 @@ export default function LeadershipPage() {
               <Eyebrow>Leadership</Eyebrow>
               <h1 className="page-title">Experienced operators with practical real estate and investor experience.</h1>
               <p className="page-lead">
-                The leadership page should feel substantive and credible, with founder photography and clear operator bios.
+                Our team is directly involved in sourcing, underwriting, and managing real estate investments across San Antonio and surrounding Texas markets bringing hands-on experience and local insight to every decision.
               </p>
             </div>
 
