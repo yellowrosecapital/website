@@ -121,10 +121,10 @@ export default function StrategyPage() {
             </Card>
 
             <Card className="card-pad stack">
-              <div className="kicker">Public guardrail</div>
-              <SectionTitle>Keep the page high level.</SectionTitle>
+              <div className="kicker">Approach to Transparency</div>
+              <SectionTitle>Approach to Transparency</SectionTitle>
               <SectionCopy style={{ marginTop: 0 }}>
-                Detailed underwriting thresholds, economics, and offering specifics belong in private materials and direct conversations, not the public website.
+                We provide a clear overview of our investment approach while reserving detailed underwriting, structure, and offering information for private discussions with qualified investors.
               </SectionCopy>
               <div className="button-row">
                 <ButtonLink href="/contact" variant="ghost">
