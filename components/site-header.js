@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 import { BrandImage } from "@/components/brand-image";
@@ -10,6 +11,11 @@ const logoPath = "/logo/yellow-rose-capital-full-logo.png";
 
 export function SiteHeader({ navItems }) {
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="site-header">
@@ -26,7 +32,20 @@ export function SiteHeader({ navItems }) {
             />
           </Link>
 
-          <nav className="site-nav" aria-label="Primary">
+          <button
+            type="button"
+            className="site-nav-toggle"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            aria-controls="primary-navigation"
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <span className="site-nav-toggle-line" />
+            <span className="site-nav-toggle-line" />
+            <span className="site-nav-toggle-line" />
+          </button>
+
+          <nav className={`site-nav${menuOpen ? " site-nav-open" : ""}`} id="primary-navigation" aria-label="Primary">
             {navItems.map((item) => (
               item.label === "Contact" ? (
                 <Link
@@ -34,7 +53,10 @@ export function SiteHeader({ navItems }) {
                   href={item.href}
                   className="button button-primary"
                   aria-current={pathname === item.href ? "page" : undefined}
-                  onClick={() => trackEvent("cta_click", { href: item.href, label: item.label, section: "header" })}
+                  onClick={() => {
+                    trackEvent("cta_click", { href: item.href, label: item.label, section: "header" });
+                    setMenuOpen(false);
+                  }}
                 >
                   {item.label}
                 </Link>
@@ -44,7 +66,10 @@ export function SiteHeader({ navItems }) {
                   href={item.href}
                   className="nav-link"
                   aria-current={pathname === item.href ? "page" : undefined}
-                  onClick={() => trackEvent("nav_click", { href: item.href, label: item.label })}
+                  onClick={() => {
+                    trackEvent("nav_click", { href: item.href, label: item.label });
+                    setMenuOpen(false);
+                  }}
                 >
                   {item.label}
                 </Link>
