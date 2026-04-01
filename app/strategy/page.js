@@ -51,23 +51,25 @@ export default function StrategyPage() {
         <Container>
           <div className="grid-2" style={{ alignItems: "start" }}>
             <Card className="card-pad stack">
-              <div className="kicker">What the strategy is</div>
-              <SectionTitle style={{ fontSize: "1.6rem" }}>Residential credit structured for steady, private-market participation.</SectionTitle>
+              <div className="kicker">What the Strategy Is</div>
+              <SectionTitle style={{ fontSize: "1.6rem" }}>
+                Residential real estate credit focused on consistent income and capital preservation
+              </SectionTitle>
               <SectionCopy style={{ marginTop: 0 }}>
-                Yellow Rose Capital originates and acquires residential mortgage notes and short-term real estate loans. The focus is on disciplined underwriting, first-position collateral, and capital preservation rather than public-market style speculation.
+                Yellow Rose Capital originates and acquires residential mortgage notes and short-term real estate loans. The strategy is centered on disciplined underwriting, first-position collateral, and generating income backed by real assets.
               </SectionCopy>
               <SectionCopy style={{ marginTop: 0 }}>
-                The public story stays simple on purpose: investors should understand the asset, the security, and the role income plays without needing every deal term on the website.
+                Our focus is on simplicity—investors should clearly understand what the investment is, how it is secured, and how income is generated.
               </SectionCopy>
             </Card>
 
             <Card className="card-pad stack">
-              <div className="kicker">Public communication principles</div>
+              <div className="kicker">How We Communicate</div>
               <ul className="muted-list">
-                <li>Keep detailed economics and underwriting private.</li>
-                <li>Use clear language that explains the strategy without overselling it.</li>
-                <li>Present the firm as a disciplined operator, not a mass-market syndicator.</li>
-                <li>Lead with Texas-rooted market knowledge and transparent communication.</li>
+                <li>We provide clear, straightforward explanations of our investment approach.</li>
+                <li>Detailed underwriting and deal-level information is shared privately with qualified investors.</li>
+                <li>We focus on disciplined execution rather than promotional messaging.</li>
+                <li>Our communication reflects a long-term, relationship-driven approach.</li>
               </ul>
             </Card>
           </div>
