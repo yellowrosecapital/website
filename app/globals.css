@@ -680,6 +680,52 @@ main {
   align-items: start;
 }
 
+.strategy-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.strategy-hero-card {
+  min-height: 100%;
+}
+
+.strategy-note-card {
+  background: linear-gradient(180deg, rgba(20, 38, 63, 0.05), rgba(214, 162, 29, 0.06));
+}
+
+.strategy-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.strategy-timeline-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
+  align-items: start;
+}
+
+.strategy-timeline-step {
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(214, 162, 29, 0.14);
+  color: #5a4308;
+  font-weight: 800;
+  flex: none;
+}
+
+.strategy-timeline-copy {
+  color: var(--muted);
+}
+
 .leadership-hero-grid {
   display: grid;
   grid-template-columns: 1fr 0.9fr;
@@ -720,7 +766,8 @@ main {
   .site-footer-grid,
   .leadership-grid,
   .leadership-hero-grid,
-  .leadership-founder-card {
+  .leadership-founder-card,
+  .strategy-hero-grid {
     grid-template-columns: 1fr;
   }
 
