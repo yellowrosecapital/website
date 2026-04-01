@@ -33,10 +33,13 @@ export default function InvestorFaqPage() {
         <Container>
           <Card className="card-pad stack">
             <div className="kicker">FAQ tone guardrail</div>
-            <SectionTitle>Answer the question, then stop.</SectionTitle>
+            <SectionTitle>Still have questions?</SectionTitle>
             <SectionCopy>
-              Each answer should be short, reassuring, and clear. The purpose is to educate qualified investors, not to close a sale on the page.
+              We’re happy to walk you through the strategy, structure, and what participation looks like. Detailed information is shared privately with qualified investors.
             </SectionCopy>
+            <div className="button-row">
+              <ButtonLink href="/contact">Request Information</ButtonLink>
+            </div>
           </Card>
         </Container>
       </Section>
