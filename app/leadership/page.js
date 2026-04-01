@@ -11,24 +11,20 @@ export default function LeadershipPage() {
     <>
       <Section className="hero">
         <Container>
-          <div className="stack">
-            <Eyebrow>Leadership</Eyebrow>
-            <h1 className="page-title">Experienced operators with practical real estate and investor experience.</h1>
-            <p className="page-lead">
-              The leadership page should feel substantive and credible, with founder photography and clear operator bios.
-            </p>
-          </div>
-        </Container>
-      </Section>
+          <div className="leadership-hero-grid">
+            <div className="stack">
+              <Eyebrow>Leadership</Eyebrow>
+              <h1 className="page-title">Experienced operators with practical real estate and investor experience.</h1>
+              <p className="page-lead">
+                The leadership page should feel substantive and credible, with founder photography and clear operator bios.
+              </p>
+            </div>
 
-      <Section className="section-tight">
-        <Container>
-          <div className="leadership-grid">
             <Card className="card-pad">
               <BrandImage
                 src="/images/yellow-rose-capital-team-photo.jpg"
                 alt="Yellow Rose Capital founders"
-                className="figure-frame"
+                className="figure-frame leadership-hero-photo"
                 fallback={
                   <div style={{ minHeight: "420px", padding: "1.4rem", display: "grid", alignContent: "end" }}>
                     <div className="stack">
@@ -42,14 +38,20 @@ export default function LeadershipPage() {
                 priority
               />
             </Card>
+          </div>
+        </Container>
+      </Section>
 
+      <Section className="section-tight">
+        <Container>
+          <div className="leadership-founder-grid">
             <div className="grid-2">
               {leadership.map((person) => (
-                <Card key={person.name} className="card-pad stack">
+                <Card key={person.name} className="card-pad leadership-founder-card">
                   <BrandImage
                     src={person.image}
                     alt={person.imageAlt || person.name}
-                    className="leader-photo"
+                    className="leader-photo leadership-founder-photo"
                     imgClassName="leader-photo-img"
                     fallback={
                       <div className="leader-photo-fallback">
@@ -60,16 +62,18 @@ export default function LeadershipPage() {
                       </div>
                     }
                   />
-                  <div className="kicker">{person.role}</div>
-                  <h2 style={{ margin: 0, fontFamily: "var(--serif)", fontSize: "2rem" }}>{person.name}</h2>
-                  <p className="section-copy" style={{ marginTop: 0 }}>{person.summary}</p>
-                  <p className="section-copy" style={{ marginTop: 0 }}>{person.details}</p>
-                  <div className="strengths">
-                    {person.strengths.map((item) => (
-                      <span key={item} className="strength">
-                        {item}
-                      </span>
-                    ))}
+                  <div className="stack">
+                    <div className="kicker">{person.role}</div>
+                    <h2 style={{ margin: 0, fontFamily: "var(--serif)", fontSize: "2rem" }}>{person.name}</h2>
+                    <p className="section-copy" style={{ marginTop: 0 }}>{person.summary}</p>
+                    <p className="section-copy" style={{ marginTop: 0 }}>{person.details}</p>
+                    <div className="strengths">
+                      {person.strengths.map((item) => (
+                        <span key={item} className="strength">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </Card>
               ))}
