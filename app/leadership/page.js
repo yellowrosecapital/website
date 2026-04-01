@@ -86,12 +86,12 @@ export default function LeadershipPage() {
         <Container>
           <Card className="card-pad stack">
             <div className="kicker">Leadership positioning</div>
-            <SectionTitle>Show practical experience, not inflated branding.</SectionTitle>
+            <SectionTitle>Built on real experience, not just presentation</SectionTitle>
             <SectionCopy>
-              The goal is to build trust with qualified investors by showing real operating depth, local knowledge, and clear roles in the investment process.
+              Our team is actively involved in the investments we manage bringing hands-on experience, local market knowledge, and disciplined decision-making to every stage of the process.
             </SectionCopy>
             <div className="button-row">
-              <ButtonLink href="/contact">Talk to the Team</ButtonLink>
+              <ButtonLink href="/contact">Speak with Our Team</ButtonLink>
             </div>
           </Card>
         </Container>
