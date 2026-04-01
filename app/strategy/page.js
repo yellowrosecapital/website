@@ -28,7 +28,7 @@ export default function StrategyPage() {
 
             <Card className="card-pad stack strategy-hero-card">
               <div className="kicker">Strategy at a glance</div>
-              <div className="stack">
+              <div className="stack strategy-hero-stat-stack">
                 <div className="feature-stat">
                   <strong>Income focus</strong>
                   <span>Residential mortgage notes and real estate-backed lending designed for current cash flow.</span>

@@ -719,6 +719,11 @@ main {
   min-height: 100%;
 }
 
+.strategy-hero-stat-stack {
+  gap: 0.7rem;
+  margin-top: -0.15rem;
+}
+
 .strategy-note-card {
   background: linear-gradient(180deg, rgba(20, 38, 63, 0.05), rgba(214, 162, 29, 0.06));
 }
