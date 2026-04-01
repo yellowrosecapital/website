@@ -10,10 +10,8 @@ export default function InvestorFaqPage() {
         <Container>
           <div className="stack">
             <Eyebrow>Investor FAQ</Eyebrow>
-            <h1 className="page-title">Common questions, answered in a calm and credible way.</h1>
-            <p className="page-lead">
-              The FAQ should explain the investor fit, the passive structure, and the private process without sounding promotional.
-            </p>
+            <h1 className="page-title">Investor FAQ</h1>
+            <p className="page-lead">Information to help you understand our approach, structure, and investor experience.</p>
           </div>
         </Container>
       </Section>
