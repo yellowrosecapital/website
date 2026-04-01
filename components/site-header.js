@@ -28,23 +28,28 @@ export function SiteHeader({ navItems }) {
 
           <nav className="site-nav" aria-label="Primary">
             {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="nav-link"
-                aria-current={pathname === item.href ? "page" : undefined}
-                onClick={() => trackEvent("nav_click", { href: item.href, label: item.label })}
-              >
-                {item.label}
-              </Link>
+              item.label === "Contact" ? (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="button button-primary"
+                  aria-current={pathname === item.href ? "page" : undefined}
+                  onClick={() => trackEvent("cta_click", { href: item.href, label: item.label, section: "header" })}
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="nav-link"
+                  aria-current={pathname === item.href ? "page" : undefined}
+                  onClick={() => trackEvent("nav_click", { href: item.href, label: item.label })}
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
-            <Link
-              href="/contact"
-              className="button button-primary"
-              onClick={() => trackEvent("cta_click", { href: "/contact", label: "Request Information", section: "header" })}
-            >
-              Request Information
-            </Link>
           </nav>
         </div>
       </div>
