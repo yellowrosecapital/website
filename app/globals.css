@@ -754,6 +754,10 @@ main {
   color: var(--muted);
 }
 
+.passive-cta-section {
+  padding-top: 1.5rem;
+}
+
 .leadership-hero-grid {
   display: grid;
   grid-template-columns: 1fr 0.9fr;
@@ -828,6 +832,10 @@ main {
 
   .leadership-hero-photo {
     min-height: 360px;
+  }
+
+  .passive-cta-section {
+    padding-top: 1rem;
   }
 }
 

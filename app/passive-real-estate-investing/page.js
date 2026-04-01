@@ -31,7 +31,7 @@ export default function PassiveRealEstateInvestingPage() {
         </Container>
       </Section>
 
-      <Section>
+      <Section className="section-tight passive-cta-section">
         <Container>
           <div className="grid-2" style={{ alignItems: "start" }}>
             <Card className="card-pad stack">
@@ -49,7 +49,7 @@ export default function PassiveRealEstateInvestingPage() {
                 We aim to provide clear, straightforward information to help you understand how our investment approach works and whether it may be a fit for your portfolio.
               </SectionCopy>
               <SectionCopy style={{ marginTop: 0 }}>
-                If you’re interested in learning more, we’re available to provide additional details and answer any questions.
+                If you're interested in learning more, we're available to provide additional details and answer any questions.
               </SectionCopy>
               <div className="button-row">
                 <ButtonLink href="/contact">Request Information</ButtonLink>
