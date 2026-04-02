@@ -6,7 +6,7 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata = createPageMetadata({
   title: "Insights",
   description:
-    "Educational insights from Yellow Rose Capital on passive real estate investing, private credit, and Texas market familiarity.",
+    "Thoughtful perspectives on residential lending, risk, and income-focused investing from Yellow Rose Capital.",
   path: "/insights",
   keywords: ["real estate insights", "private credit education", "passive investing"]
 });
@@ -18,10 +18,8 @@ export default function InsightsPage() {
         <Container>
           <div className="stack">
             <Eyebrow>Insights</Eyebrow>
-            <h1 className="page-title">Educational notes for qualified investors and curious readers.</h1>
-            <p className="page-lead">
-              This is where Yellow Rose Capital can publish educational content that reinforces the firm's public positioning without drifting into a sales funnel.
-            </p>
+            <h1 className="page-title">Insights and perspectives</h1>
+            <p className="page-lead">Thoughtful perspectives on residential lending, risk, and income-focused investing.</p>
           </div>
         </Container>
       </Section>
