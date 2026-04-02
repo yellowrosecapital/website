@@ -59,7 +59,7 @@ export default function InsightsPage() {
         <Container>
           <div className="grid-2" style={{ alignItems: "start" }}>
             <Card className="card-pad stack">
-              <div className="kicker">Reusable copy blocks</div>
+              <div className="kicker">What you'll learn</div>
               <ul className="muted-list">
                 {growthContent.copyBlocks.map((block) => (
                   <li key={block}>{block}</li>
@@ -68,7 +68,7 @@ export default function InsightsPage() {
             </Card>
 
             <Card className="card-pad stack">
-              <div className="kicker">Share snippets</div>
+              <div className="kicker">Our perspective</div>
               <ul className="muted-list">
                 {growthContent.shareSnippets.map((snippet) => (
                   <li key={snippet}>{snippet}</li>
