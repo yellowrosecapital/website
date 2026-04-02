@@ -6,6 +6,7 @@ import {
   dispatchLeadWorkflow,
   getRoutingConfig
 } from "@/lib/lead-workflow";
+import { getContactEmailConfig, sendContactInquiryEmail } from "@/lib/contact-email";
 
 function isValidEmail(email) {
   return typeof email === "string" && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -15,6 +16,7 @@ export async function POST(request) {
   try {
     const body = await request.json();
     const routingConfig = getRoutingConfig();
+    const contactEmailConfig = getContactEmailConfig();
     const isProductionDeployment = process.env.VERCEL_ENV === "production";
 
     if (body?.company) {
@@ -44,9 +46,27 @@ export async function POST(request) {
       sourcePage: "/contact"
     });
 
+    if (isProductionDeployment && !contactEmailConfig.configured) {
+      return NextResponse.json(
+        {
+          message:
+            "The contact email delivery is not configured yet. Please add SMTP settings before accepting inquiries.",
+          leadId: lead.leadId,
+          leadOwner: lead.leadOwner,
+          leadStatus: lead.leadStatus,
+          leadPriority: lead.leadPriority,
+          leadScore: lead.leadScore,
+          leadTier: lead.leadTier
+        },
+        { status: 503 }
+      );
+    }
+
     const workflow = await dispatchLeadWorkflow(lead);
+    const emailDelivery = await sendContactInquiryEmail(lead);
     const hasConfiguredDestinations = Boolean(
-      routingConfig.crmWebhookUrl ||
+      contactEmailConfig.configured ||
+        routingConfig.crmWebhookUrl ||
         routingConfig.notificationWebhookUrl ||
         routingConfig.followUpWebhookUrl ||
         routingConfig.auditWebhookUrl
@@ -57,7 +77,7 @@ export async function POST(request) {
       return NextResponse.json(
         {
           message:
-            "The lead workflow is not configured yet. Please add a CRM or inbox destination before accepting inquiries.",
+            "The lead workflow is not configured yet. Please add an email, CRM, or inbox destination before accepting inquiries.",
           leadId: lead.leadId,
           leadOwner: lead.leadOwner,
           leadStatus: lead.leadStatus,
@@ -86,6 +106,24 @@ export async function POST(request) {
       );
     }
 
+    if (contactEmailConfig.configured && !emailDelivery.ok) {
+      return NextResponse.json(
+        {
+          message:
+            "The contact inquiry email could not be sent right now. Please try again or contact the team another way.",
+          leadId: lead.leadId,
+          leadOwner: lead.leadOwner,
+          leadStatus: lead.leadStatus,
+          leadPriority: lead.leadPriority,
+          leadScore: lead.leadScore,
+          leadTier: lead.leadTier,
+          workflow,
+          emailDelivery
+        },
+        { status: 502 }
+      );
+    }
+
     const acknowledgement = buildAcknowledgementCopy(lead);
 
     return NextResponse.json({
@@ -97,6 +135,7 @@ export async function POST(request) {
       leadTier: lead.leadTier,
       leadScore: lead.leadScore,
       workflow,
+      emailDelivery,
       acknowledgement,
       message:
         "Thanks for reaching out. Your inquiry has been received and the team will review it and respond if there appears to be a fit."

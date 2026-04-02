@@ -19,7 +19,13 @@ This repository contains the Stage 1 foundation and the Stage 2 production app s
 
 ## Lead Operations
 - Inbound contact submissions are routed through the Stage 6 workflow in `lib/lead-workflow.js`.
-- Configure at least one destination before accepting production inquiries:
+- Contact submissions also send an email notification to Nick and Jacob through `lib/contact-email.js`.
+- Configure the contact email SMTP settings and at least one delivery destination before accepting production inquiries:
+  - `CONTACT_EMAIL_SMTP_HOST`
+  - `CONTACT_EMAIL_SMTP_PORT`
+  - `CONTACT_EMAIL_SMTP_USER`
+  - `CONTACT_EMAIL_SMTP_PASSWORD`
+  - `CONTACT_EMAIL_FROM`
   - `LEAD_CRM_WEBHOOK_URL`
   - `LEAD_NOTIFICATION_WEBHOOK_URL`
   - `LEAD_FOLLOWUP_WEBHOOK_URL`

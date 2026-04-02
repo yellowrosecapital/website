@@ -22,6 +22,7 @@ This document defines how inbound investor inquiries move from the public contac
 ## Routing Rules
 - Score every inquiry from the public contact form.
 - Prioritize inquiries that indicate accredited status, higher intent, or meaningful capital range.
+- Email every inquiry to Nick and Jacob through the configured SMTP contact mailbox.
 - Route every inquiry to the configured CRM or inbox destination.
 - Send a notification only for high-priority leads.
 - Send follow-up sequence data to the configured automation endpoint if one is available.
@@ -38,6 +39,7 @@ This document defines how inbound investor inquiries move from the public contac
 - If no owner is configured, the workflow uses `Investor Relations`.
 
 ## Failure Handling
+- If the configured SMTP contact mailbox is not set up in production, the contact endpoint returns a configuration error.
 - If a configured destination fails, the contact endpoint returns an error so the inquiry is not silently dropped.
 - If the production workflow has no configured lead destination, the API returns a configuration error.
 - Local development can run without external destinations for testing.
@@ -54,4 +56,3 @@ This document defines how inbound investor inquiries move from the public contac
 3. Trigger the acknowledgment or qualification follow-up if needed.
 4. Send confidential materials only after fit is confirmed.
 5. Log outcomes for future reporting and process improvement.
-
