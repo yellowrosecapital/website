@@ -10,9 +10,9 @@ export default function InvestorProcessPage() {
         <Container>
           <div className="stack">
             <Eyebrow>Investor process</Eyebrow>
-            <h1 className="page-title">A structured, relationship-based process from inquiry to private materials.</h1>
+            <h1 className="page-title">A simple, private process</h1>
             <p className="page-lead">
-              The process should feel thoughtful and professional, not like a public signup funnel.
+              We take a relationship-first approach-starting with a conversation, then sharing additional information with qualified investors.
             </p>
           </div>
         </Container>
