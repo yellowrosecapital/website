@@ -38,19 +38,19 @@ export default function InvestorProcessPage() {
         <Container>
           <div className="grid-2" style={{ alignItems: "start" }}>
             <Card className="card-pad stack">
-              <div className="kicker">What investors should expect</div>
+              <div className="kicker">What to expect</div>
               <ul className="muted-list">
-                <li>A private conversation instead of a public solicitation.</li>
-                <li>Access to confidential offering documents only if there is a fit.</li>
-                <li>A deliberate review process before any subscription decision.</li>
-                <li>Ongoing communication through private investor channels after investing.</li>
+                <li>A private, conversation-based process</li>
+                <li>Access to detailed information if there’s a fit</li>
+                <li>Time to review and ask questions before making a decision</li>
+                <li>Ongoing communication after you invest</li>
               </ul>
             </Card>
 
             <Card className="card-pad stack">
-              <SectionTitle>The process should feel premium and simple.</SectionTitle>
+              <SectionTitle>Simple and relationship-driven</SectionTitle>
               <SectionCopy>
-                The public site is designed to help an accredited individual investor understand the next step without feeling pressured.
+                We focus on clear communication and a thoughtful process—so you can evaluate the opportunity without pressure.
               </SectionCopy>
             </Card>
           </div>
