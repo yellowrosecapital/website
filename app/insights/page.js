@@ -1,5 +1,4 @@
-import { Card, Container, Eyebrow, Section, SectionCopy } from "@/components/ui";
-import { TrackableButtonLink } from "@/components/trackable-button-link";
+import { Card, Container, Eyebrow, Section } from "@/components/ui";
 import { growthContent } from "@/lib/growth-content";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -12,34 +11,19 @@ export const metadata = createPageMetadata({
 });
 
 export default function InsightsPage() {
-  const featuredArticle = growthContent.posts.find(
-    (post) => post.slug === "private-lending-vs-rental-properties-whats-the-difference"
-  );
-
   return (
     <>
-      <Section className="hero">
+      <Section className="hero insights-hero">
         <Container>
           <div className="stack">
             <Eyebrow>Insights</Eyebrow>
             <h1 className="page-title">Insights and perspectives</h1>
             <p className="page-lead">Thoughtful perspectives on residential lending, risk, and income-focused investing.</p>
-            {featuredArticle ? (
-              <div className="button-row">
-                <TrackableButtonLink
-                  href={`/insights/${featuredArticle.slug}`}
-                  variant="secondary"
-                  eventProps={{ location: "insights_hero", slug: featuredArticle.slug }}
-                >
-                  Read the article
-                </TrackableButtonLink>
-              </div>
-            ) : null}
           </div>
         </Container>
       </Section>
 
-      <Section className="section-tight">
+      <Section className="section-tight insights-grid-section">
         <Container>
           <div className="grid-2">
             {growthContent.posts.map((post) => (

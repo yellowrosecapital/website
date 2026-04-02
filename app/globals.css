@@ -395,6 +395,10 @@ main {
   padding: 4.5rem 0 3.5rem;
 }
 
+.insights-hero {
+  padding-bottom: 1.6rem;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -792,6 +796,10 @@ main {
   padding-top: 1.5rem;
 }
 
+.insights-grid-section {
+  padding-top: 1.15rem;
+}
+
 .leadership-hero-grid {
   display: grid;
   grid-template-columns: 1fr 0.9fr;
@@ -898,6 +906,10 @@ main {
     padding-top: 3rem;
   }
 
+  .insights-hero {
+    padding-bottom: 1rem;
+  }
+
   .site-header-inner {
     padding: 0.4rem 0;
   }
@@ -945,6 +957,10 @@ main {
   .hero-media,
   .hero-media-inner {
     min-height: 360px;
+  }
+
+  .insights-grid-section {
+    padding-top: 0.75rem;
   }
 
   .leadership-hero-photo {
