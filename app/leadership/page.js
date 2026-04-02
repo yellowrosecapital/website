@@ -65,15 +65,27 @@ export default function LeadershipPage() {
                   <div className="stack">
                     <div className="kicker">{person.role}</div>
                     <h2 style={{ margin: 0, fontFamily: "var(--serif)", fontSize: "2rem" }}>{person.name}</h2>
-                    <p className="section-copy" style={{ marginTop: 0 }}>{person.summary}</p>
-                    <p className="section-copy" style={{ marginTop: 0 }}>{person.details}</p>
-                    <div className="strengths">
-                      {person.strengths.map((item) => (
-                        <span key={item} className="strength">
-                          {item}
-                        </span>
-                      ))}
-                    </div>
+                    {person.bio ? (
+                      person.bio.map((paragraph) => (
+                        <p key={paragraph} className="section-copy" style={{ marginTop: 0 }}>
+                          {paragraph}
+                        </p>
+                      ))
+                    ) : (
+                      <>
+                        <p className="section-copy" style={{ marginTop: 0 }}>{person.summary}</p>
+                        <p className="section-copy" style={{ marginTop: 0 }}>{person.details}</p>
+                      </>
+                    )}
+                    {person.strengths?.length ? (
+                      <div className="strengths">
+                        {person.strengths.map((item) => (
+                          <span key={item} className="strength">
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    ) : null}
                   </div>
                 </Card>
               ))}
