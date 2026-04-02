@@ -89,9 +89,6 @@ export default function InsightsPage() {
                   <li key={snippet}>{snippet}</li>
                 ))}
               </ul>
-              <SectionCopy>
-                These snippets can be reused for previews, social cards, and future marketing assets without rewriting the core site.
-              </SectionCopy>
             </Card>
           </div>
         </Container>
