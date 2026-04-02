@@ -38,13 +38,13 @@ export default function InsightArticlePage({ params }) {
 
       <Section className="section-tight">
         <Container>
-          <div className="grid-2" style={{ alignItems: "start" }}>
-            <div className="flow">
+          <article className="article-layout">
+            <div className="article-body">
               {post.sections.map((section) => (
-                <Card key={section.heading} className="card-pad stack">
-                  <SectionTitle style={{ fontSize: "1.5rem" }}>{section.heading}</SectionTitle>
-                  <SectionCopy style={{ marginTop: 0 }}>{section.body}</SectionCopy>
-                </Card>
+                <section key={section.heading} className="article-section">
+                  <SectionTitle className="article-heading">{section.heading}</SectionTitle>
+                  <SectionCopy className="article-copy">{section.body}</SectionCopy>
+                </section>
               ))}
             </div>
 
@@ -62,7 +62,7 @@ export default function InsightArticlePage({ params }) {
                 </TrackableButtonLink>
               </div>
             </Card>
-          </div>
+          </article>
         </Container>
       </Section>
     </>

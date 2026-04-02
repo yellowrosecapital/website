@@ -598,6 +598,35 @@ main {
   margin-top: 0.8rem;
 }
 
+.article-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.article-body {
+  display: grid;
+  gap: 1.6rem;
+  max-width: 56rem;
+}
+
+.article-section {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.article-heading {
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+}
+
+.article-copy {
+  margin-top: 0;
+  max-width: none;
+  font-size: 1.02rem;
+  line-height: 1.85;
+}
+
 .form {
   display: grid;
   gap: 1rem;
@@ -805,6 +834,10 @@ main {
   .leadership-hero-grid,
   .leadership-founder-card,
   .strategy-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-layout {
     grid-template-columns: 1fr;
   }
 
