@@ -39,15 +39,6 @@ export default function InsightsPage() {
                   {post.excerpt}
                 </p>
                 <div className="footer-note">{post.publishedAt}</div>
-                <div className="button-row">
-                  <TrackableButtonLink
-                    href={`/insights/${post.slug}`}
-                    variant="secondary"
-                    eventProps={{ location: "insights_index", slug: post.slug }}
-                  >
-                    Read article
-                  </TrackableButtonLink>
-                </div>
               </Card>
             ))}
           </div>
