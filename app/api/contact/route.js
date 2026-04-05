@@ -46,22 +46,6 @@ export async function POST(request) {
       sourcePage: "/contact"
     });
 
-    if (isProductionDeployment && !contactEmailConfig.configured) {
-      return NextResponse.json(
-        {
-          message:
-            "The contact email delivery is not configured yet. Please add SMTP settings before accepting inquiries.",
-          leadId: lead.leadId,
-          leadOwner: lead.leadOwner,
-          leadStatus: lead.leadStatus,
-          leadPriority: lead.leadPriority,
-          leadScore: lead.leadScore,
-          leadTier: lead.leadTier
-        },
-        { status: 503 }
-      );
-    }
-
     const workflow = await dispatchLeadWorkflow(lead);
     const emailDelivery = await sendContactInquiryEmail(lead);
     const hasConfiguredDestinations = Boolean(
