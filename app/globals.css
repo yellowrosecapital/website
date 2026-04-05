@@ -813,16 +813,24 @@ main {
   gap: 1.25rem;
 }
 
+.leadership-founder-stack {
+  gap: 1.4rem;
+}
+
 .leadership-founder-card {
   display: grid;
-  grid-template-columns: minmax(210px, 250px) minmax(0, 1fr);
-  gap: 1rem;
+  grid-template-columns: minmax(260px, 330px) minmax(0, 1fr);
+  gap: 1.15rem;
   align-items: start;
 }
 
 .leadership-founder-photo {
   min-height: 100%;
   height: 100%;
+}
+
+.leadership-founder-copy {
+  max-width: 48rem;
 }
 
 .leadership-hero-photo {
@@ -841,9 +849,21 @@ main {
   .site-footer-grid,
   .leadership-grid,
   .leadership-hero-grid,
-  .leadership-founder-card,
   .strategy-hero-grid {
     grid-template-columns: 1fr;
+  }
+
+  .leadership-founder-card {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-founder-photo {
+    min-height: 280px;
+    max-height: 320px;
+  }
+
+  .leadership-founder-copy {
+    max-width: none;
   }
 
   .article-layout {
@@ -966,5 +986,10 @@ main {
 
   .leadership-hero-photo {
     min-height: 300px;
+  }
+
+  .leadership-founder-photo {
+    min-height: 240px;
+    max-height: 280px;
   }
 }

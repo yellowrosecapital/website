@@ -44,52 +44,50 @@ export default function LeadershipPage() {
 
       <Section className="section-tight">
         <Container>
-          <div className="leadership-founder-grid">
-            <div className="grid-2">
-              {leadership.map((person) => (
-                <Card key={person.name} className="card-pad leadership-founder-card">
-                  <BrandImage
-                    src={person.image}
-                    alt={person.imageAlt || person.name}
-                    className="leader-photo leadership-founder-photo"
-                    imgClassName="leader-photo-img"
-                    fallback={
-                      <div className="leader-photo-fallback">
-                        <div className="kicker">{person.name}</div>
-                        <p className="section-copy" style={{ marginTop: 0 }}>
-                          {person.role}
-                        </p>
-                      </div>
-                    }
-                  />
-                  <div className="stack">
-                    <div className="kicker">{person.role}</div>
-                    <h2 style={{ margin: 0, fontFamily: "var(--serif)", fontSize: "2rem" }}>{person.name}</h2>
-                    {person.bio ? (
-                      person.bio.map((paragraph) => (
-                        <p key={paragraph} className="section-copy" style={{ marginTop: 0 }}>
-                          {paragraph}
-                        </p>
-                      ))
-                    ) : (
-                      <>
-                        <p className="section-copy" style={{ marginTop: 0 }}>{person.summary}</p>
-                        <p className="section-copy" style={{ marginTop: 0 }}>{person.details}</p>
-                      </>
-                    )}
-                    {person.strengths?.length ? (
-                      <div className="strengths">
-                        {person.strengths.map((item) => (
-                          <span key={item} className="strength">
-                            {item}
-                          </span>
-                        ))}
-                      </div>
-                    ) : null}
-                  </div>
-                </Card>
-              ))}
-            </div>
+          <div className="leadership-founder-stack stack">
+            {leadership.map((person) => (
+              <Card key={person.name} className="card-pad leadership-founder-card">
+                <BrandImage
+                  src={person.image}
+                  alt={person.imageAlt || person.name}
+                  className="leader-photo leadership-founder-photo"
+                  imgClassName="leader-photo-img"
+                  fallback={
+                    <div className="leader-photo-fallback">
+                      <div className="kicker">{person.name}</div>
+                      <p className="section-copy" style={{ marginTop: 0 }}>
+                        {person.role}
+                      </p>
+                    </div>
+                  }
+                />
+                <div className="stack leadership-founder-copy">
+                  <div className="kicker">{person.role}</div>
+                  <h2 style={{ margin: 0, fontFamily: "var(--serif)", fontSize: "2rem" }}>{person.name}</h2>
+                  {person.bio ? (
+                    person.bio.map((paragraph) => (
+                      <p key={paragraph} className="section-copy" style={{ marginTop: 0 }}>
+                        {paragraph}
+                      </p>
+                    ))
+                  ) : (
+                    <>
+                      <p className="section-copy" style={{ marginTop: 0 }}>{person.summary}</p>
+                      <p className="section-copy" style={{ marginTop: 0 }}>{person.details}</p>
+                    </>
+                  )}
+                  {person.strengths?.length ? (
+                    <div className="strengths">
+                      {person.strengths.map((item) => (
+                        <span key={item} className="strength">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  ) : null}
+                </div>
+              </Card>
+            ))}
           </div>
         </Container>
       </Section>
