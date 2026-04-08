@@ -32,7 +32,7 @@ export default function ContactPage() {
                 </SectionCopy>
               </Card>
 
-              <Card className="card-pad stack">
+              <Card className="card-pad stack compliance-card">
                 <div className="kicker">Compliance Notice</div>
                 <p className="disclaimer-box" style={{ marginTop: 0 }}>
                   This website is provided for informational purposes only and does not constitute an offer to sell or a solicitation to buy any securities.
