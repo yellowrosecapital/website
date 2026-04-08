@@ -33,12 +33,18 @@ export default function ContactPage() {
               </Card>
 
               <Card className="card-pad stack">
-                <div className="kicker">Compliance language</div>
+                <div className="kicker">Compliance Notice</div>
                 <p className="disclaimer-box" style={{ marginTop: 0 }}>
-                  This website is provided for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities. Any investment opportunities referenced on this site are available only to qualified investors through confidential offering documents including a Private Placement Memorandum. Past performance does not guarantee future results.
+                  This website is provided for informational purposes only and does not constitute an offer to sell or a solicitation to buy any securities.
                 </p>
                 <p className="disclaimer-box">
-                  Investments in private real estate funds involve risk and are illiquid. Prospective investors should review offering documents carefully and consult their own legal, tax, and financial advisors.
+                  Any investment opportunities referenced are available only to qualified investors through confidential offering materials, including a Private Placement Memorandum.
+                </p>
+                <p className="disclaimer-box">
+                  Investments in private real estate funds involve risk and are not liquid. Prospective investors should carefully review all offering documents and consult with their legal, tax, and financial advisors before making any investment decision.
+                </p>
+                <p className="disclaimer-box">
+                  Past performance is not indicative of future results.
                 </p>
               </Card>
             </div>
