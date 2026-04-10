@@ -53,7 +53,7 @@ export default function StrategyPage() {
             <Card className="card-pad stack">
               <div className="kicker">What the Strategy Is</div>
               <SectionTitle style={{ fontSize: "1.6rem" }}>
-                Residential real estate credit focused on consistent income and capital preservation
+                Income-Producing Real Estate Investments
               </SectionTitle>
               <SectionCopy style={{ marginTop: 0 }}>
                 Yellow Rose Capital originates and acquires residential mortgage notes and short-term real estate loans. The strategy is centered on disciplined underwriting, first-position collateral, and generating income backed by real assets.
