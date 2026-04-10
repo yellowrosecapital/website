@@ -11,7 +11,7 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="hero">
+      <section className="hero home-hero">
         <Container>
           <div className="hero-grid">
             <div className="hero-copy">
@@ -103,20 +103,7 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <Section className="section-tight">
-        <Container>
-          <div className="grid-3">
-            {home.highlights.map((item) => (
-              <Card key={item.title} className="card-pad">
-                <div className="kicker">{item.title}</div>
-                <p className="section-copy">{item.text}</p>
-              </Card>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      <Section>
+      <Section className="home-story-section">
         <Container>
           <div className="grid-2" style={{ alignItems: "start" }}>
             <div className="stack">

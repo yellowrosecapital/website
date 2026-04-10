@@ -395,6 +395,14 @@ main {
   padding: 4.5rem 0 3.5rem;
 }
 
+.home-hero {
+  padding-bottom: 2.4rem;
+}
+
+.home-story-section {
+  padding-top: 3.2rem;
+}
+
 .insights-hero {
   padding-bottom: 0.85rem;
 }
@@ -942,6 +950,10 @@ main {
     padding-top: 3rem;
   }
 
+  .home-hero {
+    padding-bottom: 1.8rem;
+  }
+
   .insights-hero {
     padding-bottom: 0.75rem;
   }
@@ -993,6 +1005,10 @@ main {
   .hero-media,
   .hero-media-inner {
     min-height: 360px;
+  }
+
+  .home-story-section {
+    padding-top: 2.2rem;
   }
 
   .insights-grid-section {
