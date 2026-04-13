@@ -13,7 +13,7 @@ export default function StrategyPage() {
           <div className="strategy-hero-grid">
             <div className="stack">
               <Eyebrow>Strategy</Eyebrow>
-              <h1 className="page-title">Private real estate credit built for income, security, and disciplined execution.</h1>
+              <h1 className="page-title">Real Estate–Backed Investments built for income, security, and disciplined execution.</h1>
               <p className="page-lead">
                 {strategy.intro}
               </p>

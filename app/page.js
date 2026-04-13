@@ -50,7 +50,7 @@ export default function HomePage() {
                 <div className="hero-media-inner">
                   <div className="hero-media-card">
                     <div className="kicker">Investment snapshot</div>
-                    <h2 className="hero-media-title">Private real estate credit focused on income and capital preservation.</h2>
+                    <h2 className="hero-media-title">Real Estate–Backed Investments focused on income and capital preservation.</h2>
                     <p className="hero-media-copy">
                       We provide accredited investors access to real estate-backed investments structured to generate consistent income through disciplined lending and conservative underwriting.
                     </p>
